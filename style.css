@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    counter-reset: game;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+.score::after {
+    content: counter(game);
+}
+
+h1, h2 {
+    margin: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    border: 1px solid;
+}
+
+.phone {
+    border: 8px solid;
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #CCEFFF;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 30%), 16px 20px 27px rgb(0 0 0 / 20%);
+    overflow: hidden;
+}
+
+[class*="layer-"] {
+    position: absolute;
+    background: #FFF;
+}
+
+.layer-1, .layer-2 {
+    z-index: 1;
+    width: 80px;
+    height: 450px;
+    bottom: 0;
+    right: 60px;
+}
+
+.layer-2 {
+    z-index: 2;
+    right: 0;
+    left: 60px;
+}
+
+.layer-3 {
+    z-index: 3;
+    width: 220px;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: wheat;
+    border-radius: 25px;
+}
+
+.layer-4 {
+    z-index: 4;
+    width: 80px;
+    height: 350px;
+    bottom: 0;
+    left: 15px;
+}
+
+.layer-5 {
+    z-index: 5;
+    width: 220px;
+    height: 300px;
+    bottom: 0;
+    border-radius: 25px;
+    background: papayawhip;
+}
+
+.layer-6 {
+    z-index: 6;
+    width: 80px;
+    height: 250px;
+    bottom: 0;
+    right: 15px;
+}
+
+.layer-7 {
+    z-index: 7;
+    width: 220px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    background: wheat;
+    border-radius: 25px;
+}
+
+.layer-8 {
+    z-index: 8;
+    width: 150px;
+    height: 110px;
+    background: lightgray;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.layer-9, .layer-10 {
+    z-index: 9;
+    width: 110px;
+    height: 100px;
+    bottom: 0;
+}
+
+.layer-10 {
+    z-index: 10;
+    right: 0;
+}
+
+.ear-outter-left, .ear-outter-right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.ear-outter-left {
+    left: 0;
+}
+
+.ear-outter-right {
+    right: 0;
+}
+
+.ear-inner-left, .ear-inner-right {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #777;
+    border-radius: 50%;
+    top: 4px;
+}
+
+.ear-inner-left {
+    left: 5px;
+}
+
+.ear-inner-right {
+    right: 5px;
+}
+
+.head {
+    position: absolute;
+    width: 74px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+
+.eye-mark-left, .eye-mark-right {
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    background: #000;
+    border-radius: 50%;
+    top: 15px;
+}
+
+.eye-mark-left {
+    left: 12px;
+    transform: rotate(45deg);
+}
+
+.eye-mark-right {
+    right: 12px;
+    transform: rotate(-45deg);
+}
+
+.eye-left, .eye-right {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+.eye-left {
+    bottom: 8px;
+    left: 6px;
+}
+
+.eye-right {
+    top: 7px;
+    right: 6px;
+}
+
+.pupil-left, .pupil-right {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.pupil-left {
+    bottom: 1px;
+    left: 2px;
+}
+
+.pupil-right {
+    top: 1px;
+    right: 2px;
+}
+
+.nouse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid black;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 35px;
+}
+
+.mouth {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 36px;
+}
+
+.mouth-part-one, .mouth-part-two {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    border-radius: 50%;
+}
+
+.mouth-part-one {
+    left: 0;
+    border-right: 1px solid black;
+}
+
+.mouth-part-two {
+    right: 0;
+    border-left: 1px solid black;
+}
