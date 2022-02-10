@@ -211,16 +211,36 @@ h2 {
     height: 10px;
     background: #FFF;
     border-radius: 50%;
+    z-index: 1;
+    bottom: 26px;
+    overflow: hidden;
+    animation-name: blink-eye;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink-eye {
+    0% {
+        height: 10px;
+    }
+
+    5% {
+        transform: translate(0px, -5px);
+        height: 1px;
+    }
+
+    10% {
+        transform: translate(0px, 0px);
+        height: 10px;
+    }
 }
 
 .eye-left {
-    bottom: 8px;
-    left: 6px;
+    left: 18px;
 }
 
 .eye-right {
-    top: 7px;
-    right: 6px;
+    right: 18px;
 }
 
 .pupil-left, .pupil-right {
@@ -229,16 +249,15 @@ h2 {
     height: 8px;
     background: #000;
     border-radius: 50%;
+    top: 1px;
 }
 
 .pupil-left {
-    bottom: 1px;
-    left: 2px;
+    left: 1px;
 }
 
 .pupil-right {
-    top: 1px;
-    right: 2px;
+    right: 1px;
 }
 
 .nouse {
@@ -292,7 +311,7 @@ h2 {
 }
 
 .pupil-light-left {
-    left: 1px;
+    left: 3px;
 }
 
 .pupil-light-right {
