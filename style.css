@@ -152,10 +152,60 @@ h2 {
 
 .ear-outter-left {
     left: 0;
+    animation-name: ear-movement-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .ear-outter-right {
     right: 0;
+    animation-name: ear-movement-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ear-movement-left {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    5% {
+        transform: translate(5px, -5px);
+    }
+
+    10% {
+        transform: translate(0px, 0px);
+    }
+
+    15% {
+        transform: translate(5px, -5px);
+    }
+
+    20% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes ear-movement-right {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    5% {
+        transform: translate(-5px, -5px);
+    }
+
+    10% {
+        transform: translate(0px, 0px);
+    }
+
+    15% {
+        transform: translate(-5px, -5px);
+    }
+
+    20% {
+        transform: translate(0px, 0px);
+    }
 }
 
 .ear-inner-left, .ear-inner-right {
@@ -217,21 +267,22 @@ h2 {
     animation-name: blink-eye;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 @keyframes blink-eye {
-    0% {
-        height: 10px;
+    0% {        
+        transform: scaleY(1); /* equivalent to height: 10px; */
     }
 
     5% {
         transform: translate(0px, -5px);
-        height: 1px;
+        transform: scaleY(.1); /* equivalent to  height: 1px; */
     }
 
     10% {
         transform: translate(0px, 0px);
-        height: 10px;
+        transform: scaleY(1);
     }
 }
 
