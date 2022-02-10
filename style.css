@@ -274,3 +274,19 @@ h2 {
     right: 0;
     border-left: 1px solid black;
 }
+
+.pupil-light-left, .pupil-light-right {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.pupil-light-left {
+    left: 1px;
+}
+
+.pupil-light-right {
+    right: 1px;
+}
