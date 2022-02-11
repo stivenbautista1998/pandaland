@@ -108,8 +108,8 @@ input:checked {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: wheat;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .layer-4 {
@@ -126,7 +126,7 @@ input:checked {
     height: 300px;
     bottom: 0;
     border-radius: 25px;
-    background: papayawhip;
+    overflow: hidden;
 }
 
 .layer-6 {
@@ -143,8 +143,8 @@ input:checked {
     height: 200px;
     bottom: 0;
     right: 0;
-    background: wheat;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .layer-8 {
@@ -169,6 +169,22 @@ input:checked {
 .layer-10 {
     z-index: 10;
     right: 0;
+}
+
+.wave-1 {
+    background-color: #F5D18F;
+}
+
+.wave-2 {
+    background-color: #F5DEB3;
+}
+
+.wave-3 {
+    background-color: #f7e2d0;
+}
+
+.wave-4 {
+    background-color: #e3dcd0;
 }
 
 
