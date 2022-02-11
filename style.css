@@ -490,11 +490,69 @@ input:checked {
     bottom: 6px;
 }
 
-.bush-curcle-center:nth-child(6) {
-    transform: rotate(90deg);
-    bottom: -30px;
+.bush-wrapper {
+    position: absolute;
+    width: 74px;
+    height: 46px;
+    background: transparent;
+    z-index: 5;
+}
+
+.bush-tiny-rectangle {
+    position: absolute;
+    width: 14px;
+    height: 44px;
+    background-color: #73C6B6;
+    border-radius: 42%;
+    box-shadow: 0 5px 12px #000;
+}
+
+.bush-tiny-circle {
+    position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    border-radius: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #73C6B6;
+}
+
+.position-layer-7 {
+    bottom: 200px;
+    left: 90px;
+}
+
+.position-layer-8 {
+    left: 122px;
+    bottom: 300px;
+}
+
+.bush-tiny-rectangle:first-child {
+    transform: rotate(-24deg);
+    left: 16px;
+}
+
+.bush-tiny-rectangle:nth-child(2) {
+    transform: rotate(-51deg);
+    left: 5px;
+    bottom: 0;
+}
+
+.bush-tiny-rectangle:nth-child(3) {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.bush-tiny-rectangle:nth-child(4) {
+    transform: rotate(24deg);
+    right: 16px;
+}
+
+.bush-tiny-rectangle:nth-child(5) {
+    transform: rotate(51deg);
+    right: 5px;
+    bottom: 0px;
 }
