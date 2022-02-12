@@ -546,29 +546,144 @@ input:checked {
 .bush-tiny-rectangle:first-child {
     transform: rotate(-24deg);
     left: 16px;
+    animation: bush-part-one 3s infinite;
+}
+
+@keyframes bush-part-one {
+    0% {
+        transform: rotate(-24deg) translateX(0);
+    }
+
+    20% {
+        transform: rotate(-10deg) translateX(5px);
+    }
+
+    40% {
+        transform: rotate(-18deg) translateX(3px);
+    }
+
+    80% {
+        transform: rotate(-10deg) translateX(5px);
+    }
+
+    100% {
+        transform: rotate(-24deg) translateX(0);
+    }
 }
 
 .bush-tiny-rectangle:nth-child(2) {
     transform: rotate(-51deg);
     left: 5px;
     bottom: 0;
+    animation: bush-part-two 3s infinite;
+}
+
+@keyframes bush-part-two {
+    0% {
+        transform: rotate(-51deg) translateX(0);
+    }
+
+    20% {
+        transform: rotate(-37deg) translateX(5px);
+    }
+
+    40% {
+        transform: rotate(-45deg) translateX(3px);
+    }
+
+    80% {
+        transform: rotate(-37deg) translateX(5px);
+    }
+
+    100% {
+        transform: rotate(-51deg) translateX(0);
+    }
 }
 
 .bush-tiny-rectangle:nth-child(3) {
     left: 0;
     right: 0;
     margin: 0 auto;
+    animation: bush-part-three 3s infinite;
+}
+
+@keyframes bush-part-three {
+    0% {
+        transform: rotate(0) translateX(0);
+    }
+
+    20% {        
+        transform: rotate(14deg) translateX(5px);
+    }
+
+    40% {
+        transform: rotate(6deg) translateX(3px);
+    }
+
+    80% {
+        transform: rotate(14deg) translateX(5px);
+    }
+
+    100% {
+        transform: rotate(0) translateX(0);
+    }
 }
 
 .bush-tiny-rectangle:nth-child(4) {
     transform: rotate(24deg);
     right: 16px;
+    animation: bush-part-four 3s infinite;
+}
+
+@keyframes bush-part-four {
+    0% {
+        transform: rotate(24deg) translateX(0);
+    }
+
+    20% {        
+        transform: rotate(38deg) translateX(5px);
+    }
+
+    40% {
+        transform: rotate(30deg) translateX(3px);
+    }
+
+    80% {
+        transform: rotate(38deg) translateX(5px);
+    }
+
+    100% {
+        transform: rotate(24deg) translateX(0);
+    }
 }
 
 .bush-tiny-rectangle:nth-child(5) {
     transform: rotate(51deg);
     right: 5px;
     bottom: 0px;
+    animation: bush-part-five 3s infinite;
+}
+
+@keyframes bush-part-five {
+    0% {
+        transform: rotate(51deg) translateX(0);
+    }
+
+    20% {        
+        transform: rotate(65deg) translateX(5px);
+    }
+
+    40% {
+        transform: rotate(57deg) translateX(3px);
+    }
+
+    80% {
+        transform: rotate(65deg) translateX(5px);
+    }
+
+    100% {
+        transform: rotate(51deg) translateX(0);
+    }
 }
 
 .shadow {
