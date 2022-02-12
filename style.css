@@ -159,20 +159,25 @@ input:checked {
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* border: 1px solid; */
 }
 
-.layer-9, .layer-10 {
+.layer-9, .layer-10, .layer-11 {
     z-index: 9;
     width: 110px;
     height: 60px;
-    bottom: 0;
+    bottom: 4px;
     background-color: transparent;
 }
 
 .layer-10 {
     z-index: 10;
     right: -9px;
+}
+
+.layer-11 {
+    z-index: 10;
+    right: 90px;
+    bottom: -4px;
 }
 
 .wave-1 {
@@ -189,6 +194,10 @@ input:checked {
 
 .wave-4 {
     background-color: #e3dcd0;
+}
+
+.wave-5 {
+    background-color: #f7e2d0;
 }
 
 
@@ -422,17 +431,16 @@ input:checked {
 }
 
 
-/* Bush Form */
+/* Bush and Cloud Form */
 
 .cloud-one {
     position: absolute;
     width: 70px;
     height: 60px;
     border-radius: 50%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     right: 40px;
     bottom: 16px;
-    /* box-shadow: 0px 1px 2px #73c6b6, inset -4px 3px 10px rgb(22 160 133); */
 }
 
 .cloud-two {
@@ -440,8 +448,7 @@ input:checked {
     width: 85px;
     height: 70px;
     border-radius: 50%;
-    background-color: #73c6b6;
-    /* box-shadow: 0px 1px 2px #73c6b6, inset -4px 3px 10px rgb(22 160 133); */
+    background-color: #addef6;
 }
 
 .cloud-three {
@@ -449,10 +456,9 @@ input:checked {
     width: 60px;
     height: 40px;
     border-top-right-radius: 62%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     right: 0;
     bottom: 2px;
-    /* box-shadow: 0px 0px 0px #73c6b6, inset -7px 3px 8px rgb(22 160 133); */
 }
 
 .cloud-base {
@@ -461,7 +467,7 @@ input:checked {
     height: 30px;
     border-top-left-radius: 60%;
     border-bottom-left-radius: 30%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     bottom: 2px;
     left: 8px;
 }
@@ -471,7 +477,7 @@ input:checked {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     left: 20px;
 }
 
@@ -480,7 +486,7 @@ input:checked {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     bottom: 7px;
     left: 38px;
 }
@@ -491,7 +497,7 @@ input:checked {
     height: 30px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    background-color: #73c6b6;
+    background-color: #addef6;
     bottom: 7px;
     left: 20px;
 }
@@ -565,7 +571,7 @@ input:checked {
 }
 
 .shadow {
-    background-color: #177461;
+    background-color: #7aceed;
 }
 
 .tiny-shadow-cloud {
@@ -573,13 +579,18 @@ input:checked {
     z-index: 8;
     width: 110px;
     height: 60px;
-    bottom: 5px;
+    bottom: 8px;
     background-color: transparent;
     left: -4px;
 }
 
 .right-side {
     left: 178px;
+}
+
+.center-side {
+    left: 80px;
+    bottom: 1px;
 }
 
 .shadow-cloud {
@@ -592,4 +603,14 @@ input:checked {
     left: -8px;
     right: 0;
     margin: 0 auto;
+}
+
+.bottom-sky {
+    position: absolute;
+    width: 284px;
+    height: 30px;
+    background-color: #FFF;
+    z-index: 7;
+    bottom: 0;
+    box-shadow: 0px 4px 10px rgb(238 222 222 / 50%);
 }
