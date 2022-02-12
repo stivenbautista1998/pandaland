@@ -159,6 +159,7 @@ input:checked {
     left: 0;
     right: 0;
     margin: 0 auto;
+    animation: big-cloud 5s infinite;
 }
 
 .layer-9, .layer-10, .layer-11 {
@@ -169,15 +170,21 @@ input:checked {
     background-color: transparent;
 }
 
+.layer-9 {
+    animation: left-cloud 3s infinite;
+}
+
 .layer-10 {
     z-index: 10;
     right: -9px;
+    animation: right-cloud 3s infinite;
 }
 
 .layer-11 {
     z-index: 10;
     right: 90px;
     bottom: -4px;
+    animation: center-cloud 5s infinite;
 }
 
 .wave-1 {
@@ -213,16 +220,12 @@ input:checked {
 
 .ear-outter-left {
     left: 0;
-    animation-name: ear-movement-left;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation: ear-movement-left 2s infinite;
 }
 
 .ear-outter-right {
     right: 0;
-    animation-name: ear-movement-right;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation: ear-movement-right 3s infinite;
 }
 
 @keyframes ear-movement-left {
@@ -325,9 +328,7 @@ input:checked {
     z-index: 1;
     bottom: 26px;
     overflow: hidden;
-    animation-name: blink-eye;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation: blink-eye 2s infinite;
     animation-delay: 1s;
 }
 
@@ -584,13 +585,69 @@ input:checked {
     left: -4px;
 }
 
+.left-side {
+    animation: left-cloud 3s infinite;
+}
+
+@keyframes left-cloud {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(4px, 0px);
+    }
+
+    66% {
+        transform: translate(-4px, 0);
+    }
+
+    99% {
+        transform: translate(0, 0);
+    }
+}
+
 .right-side {
     left: 178px;
+    animation: right-cloud 3s infinite;
+}
+
+@keyframes right-cloud {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(4px, 0px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .center-side {
     left: 80px;
     bottom: 1px;
+    animation: center-cloud 5s infinite;
+}
+
+@keyframes center-cloud {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    40% {
+        transform: translate(8px, 0px);
+    }
+
+    80% {
+        transform: translate(-8px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .shadow-cloud {
@@ -603,6 +660,25 @@ input:checked {
     left: -8px;
     right: 0;
     margin: 0 auto;
+    animation: big-cloud 5s infinite;
+}
+
+@keyframes big-cloud {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(4px, 0px);
+    }
+
+    66% {
+        transform: translate(-4px, 0);
+    }
+
+    99% {
+        transform: translate(0, 0);
+    }
 }
 
 .bottom-sky {
