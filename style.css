@@ -152,19 +152,20 @@ input:checked {
 
 .layer-8 {
     z-index: 8;
-    width: 150px;
-    height: 110px;
+    width: 180px;
+    height: 90px;
     background: transparent;
-    bottom: 0;
+    bottom: 14px;
     left: 0;
     right: 0;
     margin: 0 auto;
+    /* border: 1px solid; */
 }
 
 .layer-9, .layer-10 {
     z-index: 9;
     width: 110px;
-    height: 100px;
+    height: 60px;
     bottom: 0;
     background-color: transparent;
 }
@@ -423,74 +424,79 @@ input:checked {
 
 /* Bush Form */
 
-.bush-cylinder, .bush-cylinder-right {
-    position: absolute;
-    width: 140px;
-    height: 90px;
-    background-color: #FFF;
-    border-radius: 50%;
-    bottom: -25px;
-}
-
-.bush-cylinder {
-    left: -30px;
-}
-
-.bush-cylinder-right {
-    right: -30px;
-}
-
-.bush-curcle, .bush-curcle-right {
+.cloud-one {
     position: absolute;
     width: 70px;
-    height: 70px;
-    background-color: #FFF;
+    height: 60px;
     border-radius: 50%;
-    top: 0;
+    background-color: #73c6b6;
+    right: 40px;
+    bottom: 16px;
+    box-shadow: 0px 1px 2px #73c6b6, inset -4px 3px 10px rgb(22 160 133);
 }
 
-.bush-curcle {
-    left: -4px;
+.cloud-two {
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #73c6b6;
+    box-shadow: 0px 1px 2px #73c6b6, inset -4px 3px 10px rgb(22 160 133);
 }
 
-.bush-curcle-right {
-    right: -12px;
+.cloud-three {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-top-right-radius: 62%;
+    background-color: #73c6b6;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 0px #73c6b6, inset -7px 3px 8px rgb(22 160 133);
 }
 
-.bush-curcle-center {
+.cloud-base {
+    position: absolute;
+    width: 124px;
+    height: 30px;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 30%;
+    background-color: #73c6b6;
+    bottom: 0;
+    left: 8px;
+}
+
+.cloud-tiny-one {
     position: absolute;
     width: 30px;
-    height: 90px;
-    background-color: lightgray;
-    border-radius: 42%;
-}
-
-.bush-curcle-center:first-child {
-    transform: rotate(-24deg);
-    left: 34px;
-}
-
-.bush-curcle-center:nth-child(2) {
-    transform: rotate(-51deg);
+    height: 30px;
+    border-radius: 50%;
+    background-color: #73c6b6;
     left: 20px;
-    bottom: 6px;
+    box-shadow: 0px 1px 2px #73c6b6, inset -6px 6px 10px rgb(22 160 133);
 }
 
-.bush-curcle-center:nth-child(3) {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+.cloud-tiny-two {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #73c6b6;
+    bottom: 7px;
+    left: 38px;
+    box-shadow: 0px 1px 2px #73c6b6, inset -6px 6px 10px rgb(22 160 133);
 }
 
-.bush-curcle-center:nth-child(4) {
-    transform: rotate(24deg);
-    right: 34px;
-}
-
-.bush-curcle-center:nth-child(5) {
-    transform: rotate(51deg);
-    right: 20px;
-    bottom: 6px;
+.cloud-tiny-three {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #73c6b6;
+    bottom: 7px;
+    left: 16px;
+    box-shadow: -2px 0px 3px rgb(22 160 133);
 }
 
 .bush-wrapper {
