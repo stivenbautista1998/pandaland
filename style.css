@@ -57,24 +57,6 @@ input:checked {
 
 .layer-1, .layer-2, .layer-4, .layer-6 {
     background-color: transparent;
-    /* animation-name: appearing-pandas;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out; */
-}
-
-@keyframes appearing-pandas {
-    0% {
-        transform: translateY(0);
-    }
-    
-    20% {
-        transform: translateY(50px);
-    }
-
-    90% {
-        transform: translateY(0);
-    }
 }
 
 .checkbox-hidden {
@@ -91,13 +73,56 @@ input:checked {
     width: 80px;
     height: 450px;
     bottom: 0;
-    right: 60px;
+    right: 50px;
+}
+
+.layer-1 {
+    animation: appearing-panda-one 1s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearing-panda-one {
+    0% {
+        transform: translateY(0);
+    }
+    
+    20% {
+        transform: translateY(50px);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
 }
 
 .layer-2 {
     z-index: 2;
     right: 0;
-    left: 60px;
+    left: 50px;
+    animation: appearing-panda-two 3s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearing-panda-two {
+    0% {
+        transform: translateY(0);
+    }
+    
+    20% {
+        transform: translateY(50px);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(50px);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
 }
 
 .layer-3 {
@@ -119,6 +144,74 @@ input:checked {
     height: 350px;
     bottom: 0;
     left: 15px;
+    animation: appearing-panda-three 4s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearing-panda-three {
+    0% {
+        transform: translateY(0);
+    }
+    
+    10% {
+        transform: translateY(50px);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateX(60px);
+    }
+
+    40% {
+        transform: translateY(50px);
+    }
+
+    41% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(50px);
+    }
+
+    56% {
+        transform: translateX(70px);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    65% {
+        transform: translateX(0);
+    }
+
+    70% {
+        transform: rotate(-4deg);
+    }
+
+    80% {
+        transform: rotate(4deg);
+    }
+
+    82% {
+        transform: rotate(0);
+    }
+
+    90% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .layer-5 {
