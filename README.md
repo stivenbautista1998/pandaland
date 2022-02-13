@@ -1,6 +1,6 @@
 # PandaLand Project
 
-![Couldn't load the gif](https://ibb.co/x71xsT4)
+![Couldn't load the gif](https://pasteboard.co/gYABvIVgf99K.gif)
 
 ## Project to traing programming skills.
 
