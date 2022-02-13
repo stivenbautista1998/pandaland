@@ -48,6 +48,7 @@ input:checked {
     background-color: #CCEFFF;
     box-shadow: 0 8px 15px rgb(0 0 0 / 30%), 16px 20px 27px rgb(0 0 0 / 20%);
     overflow: hidden;
+    z-index: 8;
 }
 
 [class*="layer-"] {
@@ -64,7 +65,7 @@ input:checked {
     width: 100%;
     height: 60px;
     z-index: 2;
-    appearance: none;  /* is like visivility: none, but is just appearance */
+    -webkit-appearance: none;  /* is like visivility: none, but is just appearance */
     cursor: pointer;
 }
 
