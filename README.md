@@ -1,7 +1,10 @@
 # PandaLand Project
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 ## Project to traing programming skills.
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Couldn't load the gif](https://github.com/stivenbautista1998/pandaland/tree/main/media/gif/pandaland.gif)]
 
 Created to work in the best practices, practice the animation technology learnt
 
