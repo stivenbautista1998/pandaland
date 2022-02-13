@@ -1,6 +1,6 @@
 # PandaLand Project
 
-![Couldn't load the gif](https://pasteboard.co/gYABvIVgf99K.gif)
+<p><img src="https://github.com/stivenbautista1998/pandaland/blob/main/media/gif/pandaland.gif" alt="pandaland gif"></p>
 
 ## Project to traing programming skills.
 
