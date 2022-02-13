@@ -1,10 +1,8 @@
 # PandaLand Project
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Couldn't load the gif](https://github.com/stivenbautista1998/pandaland/tree/main/media/gif/pandaland.gif)
 
 ## Project to traing programming skills.
-
-[![Couldn't load the gif](https://github.com/stivenbautista1998/pandaland/tree/main/media/gif/pandaland.gif)]
 
 Created to work in the best practices, practice the animation technology learnt
 
