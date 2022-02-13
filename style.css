@@ -144,7 +144,7 @@ input:checked {
     height: 350px;
     bottom: 0;
     left: 15px;
-    animation: appearing-panda-three 4s infinite;
+    animation: appearing-panda-three 6s infinite;
     animation-timing-function: ease-out;
 }
 
@@ -169,7 +169,7 @@ input:checked {
         transform: translateY(50px);
     }
 
-    41% {
+    45% {
         transform: translateX(0);
     }
 
@@ -181,19 +181,19 @@ input:checked {
         transform: translateY(50px);
     }
 
-    56% {
+    62% {
         transform: translateX(70px);
     }
 
-    60% {
+    68% {
         transform: translateY(0);
     }
 
-    65% {
+    73% {
         transform: translateX(0);
     }
 
-    70% {
+    78% {
         transform: rotate(-4deg);
     }
 
@@ -230,6 +230,54 @@ input:checked {
     height: 250px;
     bottom: 0;
     right: 15px;
+    animation: appearing-panda-four 4s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearing-panda-four {
+    0% {
+        transform: translateY(0);
+    }
+    
+    10% {
+        transform: translateY(50px);
+    }
+
+    20% {
+        transform: translateX(-70px);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .layer-7 {
